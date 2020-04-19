@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript task 33</title>
+</head>
+<body>
+  <script>
+function myTask(emma) {
+    let data = [];
+    
+    for (i = 1; i <= emma; i++) {
+        if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
+            data.push("yu-gi-oh");
+            
+        } else if (i % 2 === 0 && i % 3 === 0) {
+            data.push("yu-gi");
+            
+        } else if (i % 2 === 0 && i % 5 === 0) {
+            data.push("yu-oh");
+            
+        } else if (i % 3 === 0 && i % 5 === 0) {
+            data.push("gi-oh");
+            
+        } else if (i % 2 === 0) {
+            data.push("yu");
+            
+        } else if (i % 3 === 0) {
+            data.push("gi");
+            
+        } else if (i % 5 == 0) {
+            data.push("oh");
+            
+        } else {
+            data.push(i);
+        }
+    }
+   
+      
+console.log(data);
+    return (data);
+}
+    myTask(100);
+      myTask (150);
+      myTask (50)
+    
+      </script>
+</body>
+</html>
